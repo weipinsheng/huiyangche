@@ -1,0 +1,354 @@
+@charset "utf-8";
+
+
+.page-container {
+    width: 100%;
+    position: relative;
+}
+
+/* 侧边栏导航 */
+
+.page-sidebar {
+    width: 14.6%;
+    position: absolute;
+    height: 100%;
+    min-height: 1000px;
+    background-color: #1D1D1D;
+}
+
+.site-header {
+    padding: 25px 7%;
+}
+
+.site-logo {
+    width: 61.25%;
+}
+
+.site-logo a {
+    display: block;
+    width: 100%;
+}
+
+.site-logo img {
+    width: 100%;
+}
+
+.hidden {
+    width: 38.75%;
+}
+
+.icon-menu {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 27px;
+    background: url(../images/menu.png) right center no-repeat;
+}
+
+.main-menu>li>a {
+    display: block;
+    padding: 12px 8.2%;
+}
+
+.main-menu>li>ul a {
+    display: block;
+    padding: 12px 21%;
+}
+
+.in>li>a {
+    background: url(../images/down.png) 90% center no-repeat;
+    background-color: #F58171;
+}
+
+.inNot>li>a {
+    background-color: #F58171;
+}
+
+.active span {
+    color: #F58171!important;
+}
+
+.icon::before {
+    content: " ";
+    float: left;
+    display: block;
+    height: 25px;
+    width: 15%;
+}
+
+.icon-department::before {
+    background: url(../images/1.png) 0px 2px no-repeat;
+}
+
+.icon-post::before {
+    background: url(../images/2.png) 0px 4px no-repeat;
+}
+
+.icon-employee::before {
+    background: url(../images/3.png) 0px 2px no-repeat;
+}
+
+.icon-recruit::before {
+    background: url(../images/4.png) 0px 2px no-repeat;
+}
+
+.icon-probation::before {
+    background: url(../images/5.png) 0px 2px no-repeat;
+}
+
+.icon-promote::before {
+    background: url(../images/6.png) 0px 2px no-repeat;
+}
+
+.icon-transfer::before {
+    background: url(../images/7.png) 0px 5px no-repeat;
+}
+
+.icon-holiday::before {
+    background: url(../images/8.png) 0px 2px no-repeat;
+}
+
+.icon-dismiss::before {
+    background: url(../images/9.png) 0px 2px no-repeat;
+}
+
+.icon-service::before {
+    background: url(../images/10.png) 0px 5px no-repeat;
+}
+
+.page-footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    padding: 60px 0 35px 0;
+}
+
+.page-footer ul {
+    width: 100%;
+    text-align: center;
+}
+
+.person {
+    font-size: 1.1em;
+    color: #D8D8D8;
+    margin-bottom: 4px;
+}
+
+.time {
+    font-size: 0.875em;
+    color: #777;
+}
+
+.logout {
+    font-size: 0.875em;
+    margin: 10px 0 15px 0;
+}
+
+.logout a {
+    color: #F68271;
+}
+
+.version {
+    color: #777777;
+    font-size: 0.9em;
+}
+
+.home {
+    margin-top: 25px;
+}
+
+/*导航侧边框*/
+
+.page-simple {
+    padding-top: 20px;
+    display: none;
+    height: 1000px;
+}
+
+.page-simple li {
+    width: 100%;
+}
+
+.page-simple li.simple-in {
+    background-color: #F68271;
+}
+
+.page-simple a {
+    display: block;
+    background: url(../images/8.png) center center no-repeat;
+    height: 47px;
+}
+
+.page-simple li.simple-menu a {
+    background: url(../images/menu.png) center center no-repeat;
+}
+
+.main-container {
+    width: 85.4%;
+}
+
+.main-top {
+    background-color: #fff;
+    padding: 17px 0 10px 1.95%;
+}
+
+.main-top ul li {
+    float: left;
+}
+
+.main-top ul li a {
+    color: #858585;
+    font-size: 1em;
+}
+
+.main-content {
+    width: 98.4%;
+    background-color: #fff;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+    margin-top: 0.8%;
+    position: relative;
+}
+
+.color {
+    color: #F9AA9E!important;
+}
+
+/*下拉筛选框*/
+
+/* .select>li {
+    float: left;
+    color: #9FA3B0;
+    margin-right: 18px;
+    line-height: 40px;
+    background: url(../images/down2.png) center right no-repeat;
+    padding-right: 20px;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.hide-box {
+    position: absolute;
+    top: 50px;
+    left: -37px;
+    width: 120px;
+    height: 190px;
+    display: none;
+}
+
+.hide-box .hide {
+    position: absolute;
+    z-index: 999;
+    width: 120px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 30px #D5D5D5;
+    -moz-box-shadow: 0 0 30px #D5D5D5;
+    box-shadow: 0 0 30px #D5D5D5;
+    padding: 15px 5px;
+    display: none;
+}
+
+.hide-box .hide.nicescroll {
+    max-height: 200px;
+}
+
+.hide-box .hide li {
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer!important;
+}
+
+.hide-box .hide li:hover {
+    color: #F68271;
+}
+
+.hide-box .triangle {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -4px;
+    border: 15px solid transparent;
+    border-bottom-color: #fff;
+    border-left-width: 9px;
+    border-right-width: 9px;
+    z-index: 1000;
+    display: none;
+} */
+/*分页*/
+/* .pager-box {
+    width: 100%;
+    position: relative;
+}
+.pagination {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 20px auto;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    border-radius: 4px;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    position: relative;
+    float: left;
+    width: 33px;
+    height: 33px;
+    margin-left: -1px;
+    line-height: 33px;
+    font-size: 12px;
+    font-weight: 550;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 0 2px;
+    user-select: none;
+    border-radius: 4px;
+}
+
+.pagination>li.prev>a {
+    background-image: url(../images/left.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pagination>li.next>a {
+    background-image: url(../images/right.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pagination>li.first-page>a,
+.pagination>li.last-page>a {
+    padding: 0 15px;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    z-index: 3;
+    color: #F68271;
+    cursor: default; */
+    /*background-color: #337ab7;*/
+    /* border-color: #F68271;
+}
+.pagination li.disabled>a{
+    cursor: not-allowed;
+}
+.hide-box .hide li.keyWord {
+    color: #F68271;
+} */
